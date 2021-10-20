@@ -24,6 +24,7 @@ const Login = () => {
     error,
     setUser,
     setError,
+    setisLoading,
   } = allContext;
   const history = useHistory();
   const location = useLocation();
@@ -37,7 +38,10 @@ const Login = () => {
         history.push(redirect);
         console.log(result.user);
       })
-      .catch((err) => setError(err.message));
+      .catch((err) => {
+        setisLoading(false);
+        setError(err.message);
+      });
   };
 
   ////redirect to initial page with email password
@@ -50,6 +54,7 @@ const Login = () => {
         console.log(result.user);
       })
       .catch((error) => {
+        setisLoading(false);
         setError(error.message);
       });
   };

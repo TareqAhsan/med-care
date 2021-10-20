@@ -20,6 +20,7 @@ const useFirebase = () => {
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [photo, setPhoto] = useState("");
+  const [isLoading, setisLoading] = useState(true);
 
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
@@ -31,7 +32,7 @@ const useFirebase = () => {
   // sign with email pass
   const signInWithEmail = () => {
     // e.preventDefault();
-   return signInWithEmailAndPassword(auth, email, password)
+    return signInWithEmailAndPassword(auth, email, password);
   };
 
   // set name and image
@@ -46,15 +47,18 @@ const useFirebase = () => {
       });
   };
 
-  // GEt the currently signed in user
+  // GEt the currently signed in user obesrver
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
+    const unsubscribed = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
         console.log(user);
+      } else {
+        setUser({});
       }
+      setisLoading(false);
     });
-    return () => unsubscribe;
+    return () => unsubscribed;
   }, []);
 
   // Logout
@@ -64,6 +68,7 @@ const useFirebase = () => {
         setUser({}); // Sign-out successful.
       })
       .catch((error) => {
+        setisLoading(false);
         setError(error.message); // An error happened.
       });
   };
@@ -114,6 +119,8 @@ const useFirebase = () => {
     getName,
     signUp,
     signInWithEmail,
+    setisLoading,
+    isLoading,
   };
 };
 
