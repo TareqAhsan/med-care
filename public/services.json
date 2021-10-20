@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Eye Care",
+    "id": 1,
+    "visit": 1000,
+    "img": "https://i.ibb.co/ZN8RHbR/eyecare.jpg",
+    "imgdoc": "https://i.ibb.co/s1cLk2w/5.jpg",
+    "special": "Eye specialist",
+    "docname":"Anderson",
+    "description": "diagnose and treat all eye conditions perform eye surgeries conduct scientific research into the causes and cures for eye conditions and vision problems"
+  },
+  {
+    "name": "Medical Checkup",
+    "id": 2,
+    "visit": 1000,
+    "img": "https://i.ibb.co/N20t4zp/medical-Checkup.jpg",
+    "imgdoc": "https://i.ibb.co/Vv41pc0/4.jpg",
+    "special": "Medicine specialist",
+    "docname":"jimmy",
+    "description": "includes a variety of tests depending on the age and sex and health of the person we provide all kinds of  checkup, health check"
+  },
+  {
+    "name": "Cardiology",
+    "id": 3,
+    "visit": 1000,
+    "img": "https://i.ibb.co/4MZzPnb/cardiology.jpg",
+    "imgdoc": "https://i.ibb.co/prBkHwf/3.jpg",
+    "special": "Cardiology specialist",
+    "docname":"Sammy",
+    "description": "Your Cardiologist may order specialized testing to determine which treatment options are best for you. Those tests can be performed here , close to home, saving you time and money"
+  },
+  {
+    "name": "Neurology",
+    "id": 4,
+    "visit": 1000,
+    "img": "https://i.ibb.co/7bwfpkJ/neurology.jpg",
+    "imgdoc": "https://i.ibb.co/n07G2L5/2.jpg",
+    "special": "Neurology specialist",
+    "docname":"Bravo",
+    "description": "complex condition of the brain, spine or central nervous system, you need advanced care and a team of compassionate specialists. we offer comprehensive diagnostic and treatment options, including neuroimmunology treatments, neurosurgery and interventional neuroradiology, so you can get the care that best meets your needs"
+  },
+  {
+    "name": "Asthma Care",
+    "id": 5,
+    "visit": 3000,
+    "img": "https://i.ibb.co/pZK4DSQ/Asthma-Care.jpg",
+    "imgdoc": "https://i.ibb.co/47qTgKm/6.jpg",
+    "special": "Asthma specialist",
+    "docname":"Yousuf",
+    "description": "Asthma is a lifelong condition that affects millions. With the right care, treatment and support, you can still lead a normal, healthy life our Asthma specialists  can help you keep your asthma symptoms under control."
+  },
+  {
+    "name": "Diabetes Services",
+    "id": 6,
+    "visit": 2000,
+    "img": "https://i.ibb.co/x38Y70p/diabetes.jpg",
+    "imgdoc": "https://i.ibb.co/4Jmzcjg/doc1.jpg",
+    "special": "Diabetes specialist",
+    "docname":"Shakib",
+    "description": "Whether you’re an adult with type 2 diabetes, a pregnant woman with gestational diabetes, or a parent whose child has type 1 diabetes, you need a medical team you can count on. we provide comprehensive diabetes care, including disease management, support groups and specialized classes"
+  }
+]
